@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js_task/lesson-02-task-01.js"></script>
+    <script src="js_task/lesson-02-task-02.js"></script>
+    <script src="js_task/lesson-02-task-03.js"></script>
+    <script src="js_task/lesson-02-task-04.js"></script>
+    <script src="js_task/lesson-02-task-05.js"></script>
+    <script src="js_task/lesson-02-task-06.js"></script>
+    <script src="js_task/lesson-02-task-07.js"></script>
+    <script src="js_task/lesson-02-task-08.js"></script>
+    <script src="js_task/lesson-02-task-09.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>JavaScript For Loop</h1>
+    <h2>Task 2 : multiply table HTML</h2>
+    
+    <script>
+        document.write('<table border="1">')
+            for(let i=1; i <= 10; i++) 
+            {
+              document.write('<tr>')
+    
+              for(let j=1; j <= 10; j++) 
+              {
+                let result = i * j
+                    if ((result == 50) || (result == 72) || (result == 100)) {
+                        document.write('<td style="border: 3px solid rgb(7, 11, 243)">' + i * j + '</td>')
+                        
+                    }else {
+                        document.write('<td>' + i * j + '</td>')
+                    }
+              }
+              document.write('</tr>')
+            }
+        document.write('</table>')
+    </script>
+
+    <h2>Task 3 : multiply table HTML</h2>
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            let text;
+            let person = prompt("Please enter your name:", "what your name?");
+                if (person == null || person == "") {
+                    text = "User cancelled the prompt.";
+                } else {
+                    text = "Hello " + person + "! How are you today?";
+                }
+                document.getElementById("demo").innerHTML = text;
+            }
+    </script>
+
+
+</body>
+</html>
